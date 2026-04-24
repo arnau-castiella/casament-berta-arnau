@@ -7,56 +7,126 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="navbar" aria-label="Navegació principal">
+    <a href="#inici">Inici</a>
+    <a href="#cerimonia">Cerimònia</a>
+    <a href="#festival">El festival</a>
+    <a href="#info">Informació</a>
+    <a href="#apuntat">Apunta't</a>
+  </nav>
 
   <header id="inici" class="hero">
-    <nav class="navbar">
-      <a href="#inici">Inici</a>
-      <a href="#cerimonia">La Cerimònia</a>
-      <a href="#festival">El Festival</a>
-      <a href="#info">Informació</a>
-      <a href="#apuntat">Apunta't</a>
-    </nav>
+    <div class="hero-panel hero-copy-panel">
+      <div class="hero-copy">
+        <p class="subtitle">Ens casem!</p>
+        <h1>Berta i Arnau</h1>
+        <p class="date">28 i 29 de maig de 2027</p>
+      </div>
+    </div>
 
-    <div class="hero-content">
-      <p class="subtitle">Ens casem!</p>
-      <h1>Casament<br>Berta i Arnau</h1>
-      <p class="date">28 & 29 de maig de 2027</p>
+    <div class="hero-panel hero-media-panel">
+      <img class="hero-image" src="assets/imatge-inici.png" alt="Imatge d'inici del casament" />
     </div>
   </header>
 
   <main>
-
-    <section id="cerimonia" class="section">
-      <div class="section-content">
-        <p class="section-label">Dia 1</p>
-        <h2>La Cerimònia</h2>
-        <p>
-          El divendres 28 de maig de 2027 celebrarem la cerimònia amb família
-          i amistats properes.
+    <section id="cerimonia" class="section ceremony-section">
+      <div class="section-content wide">
+        <p class="section-label">Primer dia</p>
+        <h2>La cerimònia</h2>
+        <p class="ceremony-intro">
+          El <strong>divendres 28 de maig</strong> es durà a terme la cerimònia, amb la
+          família i els amics més propers. L'hora d'arribada serà a
+          <strong>primera hora de la tarda</strong> així tothom podrà dinar a casa
+          amb tranquil·litat. Després de la cerimònia <strong>sopar i festeta</strong>
+          fins a l'hora que puguem allargar.
         </p>
 
-        <div class="details">
-          <p><strong>Data:</strong> 28 de maig de 2027</p>
-          <p><strong>Lloc:</strong> Casa de Colònies Can Maiol</p>
-          <p><strong>Ubicació:</strong> Sant Andreu Salou, Girona</p>
+        <div class="timeline-wrapper">
+          <div class="timeline" aria-label="Planning del casament">
+            <article class="timeline-item">
+              <span class="timeline-time">16:00</span>
+              <h3>Arribada</h3>
+              <p>Recepció dels convidats i primers moments de calma abans que comenci el sarau.</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">18:00</span>
+              <h3>Cerimònia</h3>
+              <p>Moment oficial, bonic i amb probabilitat elevada de mocadors estratègics.</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">20:00</span>
+              <h3>Aperitiu</h3>
+              <p>Una estoneta per a assimilar la cerimònia i retocar-se el maquillatge. Amb menjar!</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">21:30</span>
+              <h3>Sopar</h3>
+              <p>Menjar, brindis i converses que començaran normals i acabaran sent llegendàries.</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">Fins les 3:00</span>
+              <h3>Festa</h3>
+              <p>Música, celebració i dignitat personal en clara tendència descendent.</p>
+            </article>
+          </div>
         </div>
+
+        <p class="timeline-hint">Desplaça horitzontalment per veure tot el planning</p>
       </div>
     </section>
 
-    <section id="festival" class="section alt">
-      <div class="section-content">
-        <p class="section-label">Dia 2</p>
-        <h2>El Festival</h2>
-        <p>
-          El dissabte 29 de maig de 2027 continuarem la celebració amb un format
-          més obert, festiu i amb més gent.
+    <section id="festival" class="section alt festival-section">
+      <div class="section-content wide">
+        <p class="section-label">Segon dia</p>
+        <h2>El festival</h2>
+        <p class="ceremony-intro">
+          El <strong>dissabte 29 de maig</strong> continuarà la celebració! Tindrem
+          tot el matí per fer una mica de <strong>piscineo i vermuteo</strong>; i per
+          la tarda tenim reservats uns quants <strong>concerts en directe</strong> per
+          a tothom. Per la nit, com no podria faltar, acabarem amb música i
+          ballaruques fins que el cos aguanti!
         </p>
 
-        <div class="details">
-          <p><strong>Data:</strong> 29 de maig de 2027</p>
-          <p><strong>Lloc:</strong> Casa de Colònies Can Maiol</p>
-          <p><strong>Ubicació:</strong> Sant Andreu Salou, Girona</p>
+        <div class="timeline-wrapper">
+          <div class="timeline" aria-label="Planning del festival">
+            <article class="timeline-item">
+              <span class="timeline-time">11:30</span>
+              <h3>Piscineo</h3>
+              <p>Una estona de relax, remull i sol per començar el dia com toca.</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">14:00</span>
+              <h3>Dinar</h3>
+              <p>Taula llarga, gana acumulada i converses que s'allargaran sense pressa.</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">18:00</span>
+              <h3>Concerts</h3>
+              <p>Per la tarda, música en directe per anar escalfant l'ambient com cal.</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">21:30</span>
+              <h3>Sopar</h3>
+              <p>Recarregarem energies abans d'entrar de ple al tram final de la jornada.</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-time">Fins les 3:00</span>
+              <h3>Festa</h3>
+              <p>Música, ballaruques i resistència física posada a prova fins ben entrada la nit.</p>
+            </article>
+          </div>
         </div>
+
+        <p class="timeline-hint">Desplaça horitzontalment per veure tot el planning</p>
       </div>
     </section>
 
@@ -109,12 +179,10 @@
         </a>
       </div>
     </section>
-
   </main>
 
   <footer>
     <p>Berta & Arnau · 2027</p>
   </footer>
-
 </body>
 </html>
