@@ -1,10 +1,10 @@
 :root {
-  --bg: #f7f1ea;
-  --bg-alt: #efe3d6;
-  --text: #2f2723;
-  --muted: #7b6a60;
-  --accent: #9b6b52;
-  --accent-dark: #684434;
+  --bg: #f4f0e8;
+  --bg-alt: #e3e8dc;
+  --text: #263126;
+  --muted: #657160;
+  --accent: #6d9166;
+  --accent-dark: #4f6f49;
   --white: #ffffff;
   --nav-height: 76px;
 }
@@ -26,7 +26,8 @@ body {
 
 .hero {
   min-height: 100vh;
-  background: #b8b0a8;
+  background:
+    linear-gradient(135deg, #7d9871 0%, #6d9166 45%, #a9a289 100%);
   display: flex;
   align-items: stretch;
   padding-top: var(--nav-height);
@@ -49,7 +50,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  background: rgba(47, 39, 35, 0.75);
+  background: rgba(38, 49, 38, 0.78);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -210,7 +211,7 @@ p {
   left: 40px;
   right: 40px;
   height: 2px;
-  background: rgba(155, 107, 82, 0.35);
+  background: rgba(109, 145, 102, 0.35);
 }
 
 .timeline-item {
@@ -276,7 +277,7 @@ p {
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   margin-top: 48px;
   text-align: left;
@@ -297,6 +298,12 @@ p {
 
 .card p {
   font-size: 17px;
+  text-align: justify;
+}
+
+.card p strong {
+  font-size: 1.08em;
+  font-weight: 700;
 }
 
 .map-container {
@@ -314,7 +321,7 @@ p {
 }
 
 .cta-section {
-  background: #d8c2af;
+  background: #c9d4c1;
 }
 
 .button {
@@ -329,6 +336,20 @@ p {
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.cta-button {
+  margin-top: 32px;
+  padding: 20px 42px;
+  border-radius: 14px;
+  font-size: 17px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
 .button:hover {
@@ -473,6 +494,15 @@ footer p {
   .timeline-item p {
     font-size: 15px;
     line-height: 1.55;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: min(100%, 320px);
   }
 
   p {
