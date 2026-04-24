@@ -1,25 +1,119 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evento 2026</title>
+  <title>Casament Berta i Arnau</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Nombre del evento</h1>
-    <p>Fecha: 12 de julio de 2026</p>
-    <p>Localización: Girona</p>
 
-    <section>
-      <h2>Planning</h2>
-      <ul>
-        <li>18:00 - Llegada</li>
-        <li>19:00 - Actividad principal</li>
-        <li>21:00 - Cena</li>
-      </ul>
+  <header class="hero">
+    <nav class="navbar">
+      <a href="#cerimonia">La Cerimònia</a>
+      <a href="#festival">El Festival</a>
+      <a href="#info">Informació</a>
+      <a href="#apuntat">Apunta't</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="subtitle">Ens casem!</p>
+      <h1>Casament<br>Berta i Arnau</h1>
+      <p class="date">28 & 29 de maig de 2027</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="cerimonia" class="section">
+      <div class="section-content">
+        <p class="section-label">Dia 1</p>
+        <h2>La Cerimònia</h2>
+        <p>
+          El divendres 28 de maig de 2027 celebrarem la cerimònia amb família
+          i amistats properes.
+        </p>
+
+        <div class="details">
+          <p><strong>Data:</strong> 28 de maig de 2027</p>
+          <p><strong>Lloc:</strong> Casa de Colònies Can Maiol</p>
+          <p><strong>Ubicació:</strong> Sant Andreu Salou, Girona</p>
+        </div>
+      </div>
     </section>
+
+    <section id="festival" class="section alt">
+      <div class="section-content">
+        <p class="section-label">Dia 2</p>
+        <h2>El Festival</h2>
+        <p>
+          El dissabte 29 de maig de 2027 continuarem la celebració amb un format
+          més obert, festiu i amb més gent.
+        </p>
+
+        <div class="details">
+          <p><strong>Data:</strong> 29 de maig de 2027</p>
+          <p><strong>Lloc:</strong> Casa de Colònies Can Maiol</p>
+          <p><strong>Ubicació:</strong> Sant Andreu Salou, Girona</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="section info-section">
+      <div class="section-content wide">
+        <p class="section-label">Detalls pràctics</p>
+        <h2>Informació</h2>
+
+        <div class="info-grid">
+          <article class="card">
+            <h3>Com arribar</h3>
+            <p>
+              La celebració serà a la Casa de Colònies Can Maiol, a Sant Andreu
+              Salou, Girona.
+            </p>
+
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps?q=Casa%20de%20Col%C3%B2nies%20Can%20Maiol%20Sant%20Andreu%20Salou%20Girona&output=embed"
+                loading="lazy">
+              </iframe>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Acomodament</h3>
+            <p>
+              Hi haurà places limitades per dormir al mateix espai.
+              L’allotjament s’haurà de gestionar directament amb els nuvis.
+            </p>
+            <p>
+              Més endavant compartirem més informació segons disponibilitat.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apuntat" class="section cta-section">
+      <div class="section-content">
+        <p class="section-label">Confirmació</p>
+        <h2>Apunta't</h2>
+        <p>
+          Properament afegirem aquí l’enllaç al formulari per confirmar
+          assistència i indicar informació important.
+        </p>
+
+        <a class="button disabled" href="#" aria-disabled="true">
+          Formulari disponible aviat
+        </a>
+      </div>
+    </section>
+
   </main>
+
+  <footer>
+    <p>Berta & Arnau · 2027</p>
+  </footer>
+
 </body>
 </html>
