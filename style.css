@@ -35,14 +35,23 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
   display: flex;
   justify-content: center;
   gap: 32px;
-  padding: 28px 20px;
+  padding: 20px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  background: rgba(47, 39, 35, 0.75);
+  backdrop-filter: blur(8px);
 }
 
 .navbar a {
@@ -88,6 +97,11 @@ h1 {
 
 .section.alt {
   background: var(--bg-alt);
+}
+
+section,
+.hero {
+  scroll-margin-top: 80px;
 }
 
 .section-content {
