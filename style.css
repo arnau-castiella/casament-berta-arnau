@@ -188,6 +188,23 @@ p {
   font-weight: 700;
 }
 
+.ceremony-bullets {
+  max-width: 920px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.ceremony-bullets li {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.ceremony-bullets li::marker {
+  color: var(--accent);
+  font-size: 1.35em;
+}
+
 .timeline-wrapper {
   position: relative;
   margin-top: 54px;
